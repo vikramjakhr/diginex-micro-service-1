@@ -45,8 +45,8 @@ go build
 
 * Run the binary as a server
 ```
-dignex-micro-service-1                  // default port is 8080
-dignex-micro-service-1 --port=9090      // with custom port
+diginex-micro-service-1 --diginex_micro_sercvice_2_base_url=http://localhost:8081`      // default port is 8080
+diginex-micro-service-1 --port=8080 --diginex_micro_sercvice_2_base_url=http://localhost:8081
 ```
 
 #### Accessing the API:
