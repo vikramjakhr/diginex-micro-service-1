@@ -1,0 +1,35 @@
+# Default values for diginex-micro-service-1.
+
+replicaCount: 1
+
+image:
+  repository: <repository-here>
+  tag: <tag-here>
+  pullPolicy: IfNotPresent
+
+imagePullSecrets: ["docker-registry-credentials-here"]
+
+containers:
+  port: 8081
+
+service:
+  type: ClusterIP
+  replicas: 1
+  port: 80
+
+ingress:
+  enabled: false
+
+resources:
+  limits:
+    cpu: 100m
+    memory: 128Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}

@@ -76,6 +76,7 @@ func main() {
 	validate()
 
 	// Register API endpoints
+	http.HandleFunc("/health", health)
 	http.HandleFunc("/api", handler)
 
 	// Listen and serve API's

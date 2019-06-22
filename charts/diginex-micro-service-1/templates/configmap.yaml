@@ -1,0 +1,10 @@
+---
+# App1 ConfigMap
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app1-config
+  namespace: production
+data:
+  PORT: 8080
+  DIGINEX_MS_2_BASE_URL: http://localhost:8081
